@@ -19,8 +19,4 @@ print(C)
 
 
 
-# In[ ]:
-
-
-
-
+# Calificación: 7.0
