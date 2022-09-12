@@ -20,3 +20,4 @@ print(C)
 
 
 # Calificación: 7.0
+# ¿Donde esta el import numpy? :(
