@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-
+# %%
 
 import numpy as np                  ## Importamos paquetes externos
 import matplotlib.pyplot as plt     
@@ -43,8 +43,13 @@ for k in range(n): #Ciclo para sumar terminos
 """Para facilitar el grafico de la serie con sen(1), me es preferible para mis conocimientos (ya que no se como hacerlo 
 de otra manera) generar una definicion de esta y luego graficarla como variable"""
 
+# Comentario del profesor: ¿Quién es m? Cuando uno lee el código a la carrera no queda claro.
 def sin_taylor(m):      
-    
+# Faltó un docstring en esta función. Hay confusión en el uso de docstrings. 
+
+    # No se define la variable approx, el código no funciona
+    approx = np.zeros(len(m)) # AGREGADO POR EL PROFESOR
+
     for i in range(1,len(m)+1):     
         s = 0         
         for k in range(i):
@@ -59,11 +64,13 @@ def sin_taylor(m):
 
 
 #Defino el programa en variable
+n = np.arange(0,5) ## AGREGADO POR EL PROFESOR
+# Este código no funciona, tal vez hay que definir n antes de esta línea
 f = sin_taylor(n) 
 
 #Defino una serie de vectores
-n = np.arange(0,5)      
-approx = np.zeros(5)
+#n = np.arange(0,5)   # COMENTADO POR EL PROFESOR   
+#approx = np.zeros(5) # COMENTADO POR EL PROFESOR
 x = 1 
 v_real = np.sin(1)*np.ones(5) #vector real de sen(1)
 error = v_real - f
@@ -83,6 +90,8 @@ plt.legend()
 
 plt.show()
 
+
+# CALIFICACIÓN: 5.0. El código entregado no funcionaba
 
 # In[ ]:
 
