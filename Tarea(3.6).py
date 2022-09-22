@@ -55,3 +55,4 @@ print("SUM hasta n=", n, "es: ", sum )
 
 #Los valores son similares, con un margen de error casi infimo.
 
+# Calificación: 7.0
