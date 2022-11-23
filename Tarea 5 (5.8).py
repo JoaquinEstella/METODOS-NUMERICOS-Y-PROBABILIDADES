@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# %%
 
 
 """Importamos"""
@@ -49,6 +49,9 @@ for i in range (λ):
     
 print('existe una probabilidad de ver', i+1, 'estrellas en media hora con un valor de: ', np.amax(p)*100,'%.')
 
+# Calificación: 6.5
+# Lo que llamas número máximo de estrellas en realidad corresponde al número promedio de estrellas para
+# la distribución de Poisson.
 
 # In[ ]:
 
